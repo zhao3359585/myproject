@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI作业列表</title>
+    <link type="text/css" rel="stylesheet" href="css/ai-style.css">
+    <link rel="stylesheet" href="webfont/iconfont.css">
+    <script src="webfont/iconfont.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="toolbar">
+        <div class="search-section">
+            <span class="search-icon"></span>
+            <input type="text" placeholder="请输入作业名称" value="河北实验六年级">
+            <button class="search-btn">搜索</button>
+        </div>
+        <select class="grade-select">
+            <option>选择年级</option>
+            <option>六年级</option>
+            <option>七年级</option>
+            <option>八年级</option>
+        </select>
+        <div class="date-badge">作业时间：2025-12-28 至 2026-02-28</div>
+        <button class="reset-btn">重置</button>
+        <div class="paging">
+            <span class="page-indicator">1/10</span>
+            <input type="text" class="page-input" value="" placeholder="页码">
+            <button class="goto-btn">跳转</button>
+        </div>
+        <button class="new-job-btn"><span class="plus-sign iconfont">&#xe603;</span> 新建AI作业</button>
+    </div>
+
+    <div class="jobs-grid">
+        <!-- 任务1: 2月9日 -->
+        <div class="job-card">
+            <div class="job-header">
+                <span class="job-title">河北实验六年级英语2月9日同步作业</span>
+                <div class="job-actions">
+                    <button class="action-btn iconfont" onclick="void(0)">&#xe629; 重置标定卷</button>
+                    <button class="action-btn iconfont" onclick="openEditModal()">&#xe6bd; 编辑</button>
+                    <span class="delete-item iconfont">&#xe516; 删除</span>
+                </div>
+            </div>
+            <div class="job-meta">
+                <span class="meta-item iconfont">&#xe680; 数学</span>
+                <span class="meta-item iconfont">&#xe627; 创建教师：赵法涛</span>
+                <span class="meta-item iconfont">&#xe8b4; 2026-02-09 13:31</span>
+            </div>
+            <div class="job-main-row">
+                <div class="thumb-card" onclick="openLightbox(1, 1)">
+                    <img class="thumb-img" src="http://mmath.cn/demo/aiwork/t1.png" alt="thumb" onerror="this.src='https://via.placeholder.com/160x200?text=t1'">
+                    <span class="thumb-badge">8页</span>
+                </div>
+                <div class="class-row-duo">
+                    <a class="class-card" href="detials.html">
+                        <div class="class-name">八年级1班 <span class="class-total">班级共 40人</span></div>
+                        <div class="stats-grid">
+                            <span class="stat-item">已扫描 <span class="scanned-num">20人</span></span>
+                            <span class="stat-item">已批阅 <span class="marked-num">10人</span></span>
+                            <span class="stat-item"><span class="iconfont shalou">&#xe677;</span> 待处理 <span class="pending-num">2人</span></span>
+                        </div>
+                    </a>
+                    <a class="class-card"href="detials.html">
+                        <div class="class-name">八年级2班 <span class="class-total">班级共 42人</span></div>
+                        <div class="stats-grid">
+                            <span class="stat-item">已扫描 <span class="scanned-num">0人</span></span>
+                            <span class="stat-item">已批阅 <span class="marked-num">0人</span></span>
+                            <span class="stat-item"><span class="iconfont shalou">&#xe677;</span> 待处理 <span class="pending-num">2人</span></span>
+                        </div>
+                    </a>
+                    <a class="class-card"href="detials.html">
+                        <div class="class-name">八年级2班 <span class="class-total">班级共 42人</span></div>
+                        <div class="stats-grid">
+                            <span class="stat-item">已扫描 <span class="scanned-num">0人</span></span>
+                            <span class="stat-item">已批阅 <span class="marked-num">0人</span></span>
+                            <span class="stat-item"><span class="iconfont shalou">&#xe677;</span> 待处理 <span class="pending-num">2人</span></span>
+                        </div>
+                    </a>
+                    <a class="class-card"href="detials.html">
+                        <div class="class-name">八年级2班 <span class="class-total">班级共 42人</span></div>
+                        <div class="stats-grid">
+                            <span class="stat-item">已扫描 <span class="scanned-num">0人</span></span>
+                            <span class="stat-item">已批阅 <span class="marked-num">0人</span></span>
+                            <span class="stat-item"><span class="iconfont shalou">&#xe677;</span> 待处理 <span class="pending-num">2人</span></span>
+                        </div>
+                    </a>
+                    <a class="class-card"href="detials.html">
+                        <div class="class-name">八年级2班 <span class="class-total">班级共 42人</span></div>
+                        <div class="stats-grid">
+                            <span class="stat-item">已扫描 <span class="scanned-num">0人</span></span>
+                            <span class="stat-item">已批阅 <span class="marked-num">0人</span></span>
+                            <span class="stat-item"><span class="iconfont shalou">&#xe677;</span> 待处理 <span class="pending-num">2人</span></span>
+                        </div>
+                    </a>
+                    <a class="class-card"href="detials.html">
+                        <div class="class-name">八年级2班 <span class="class-total">班级共 42人</span></div>
+                        <div class="stats-grid">
+                            <span class="stat-item">已扫描 <span class="scanned-num">0人</span></span>
+                            <span class="stat-item">已批阅 <span class="marked-num">0人</span></span>
+                            <span class="stat-item"><span class="iconfont shalou">&#xe677;</span> 待处理 <span class="pending-num">2人</span></span>
+                        </div>
+                    </a>
+                    <a class="class-card"href="detials.html">
+                        <div class="class-name">八年级2班 <span class="class-total">班级共 42人</span></div>
+                        <div class="stats-grid">
+                            <span class="stat-item">已扫描 <span class="scanned-num">0人</span></span>
+                            <span class="stat-item">已批阅 <span class="marked-num">0人</span></span>
+                            <span class="stat-item"><span class="iconfont shalou">&#xe677;</span> 待处理 <span class="pending-num">2人</span></span>
+                        </div>
+                    </a>
+                    <a class="class-card"href="detials.html">
+                        <div class="class-name">八年级2班 <span class="class-total">班级共 42人</span></div>
+                        <div class="stats-grid">
+                            <span class="stat-item">已扫描 <span class="scanned-num">0人</span></span>
+                            <span class="stat-item">已批阅 <span class="marked-num">0人</span></span>
+                            <span class="stat-item"><span class="iconfont shalou">&#xe677;</span> 待处理 <span class="pending-num">2人</span></span>
+                        </div>
+                    </a>
+                    <a class="class-card"href="detials.html">
+                        <div class="class-name">八年级2班 <span class="class-total">班级共 42人</span></div>
+                        <div class="stats-grid">
+                            <span class="stat-item">已扫描 <span class="scanned-num">0人</span></span>
+                            <span class="stat-item">已批阅 <span class="marked-num">0人</span></span>
+                            <span class="stat-item"><span class="iconfont shalou">&#xe677;</span> 待处理 <span class="pending-num">2人</span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 任务2: 2月5日 (无班级) -->
+        <div class="job-card">
+            <div class="job-header">
+                <span class="job-title">河北实验六年级英语2月5日同步作业</span><span style="color:red;">本次作业标定中</span>
+                <div class="job-actions">
+                    <button class="action-btn iconfont" onclick="void(0)">&#xe604; 划分标定卷</button>
+                    <button class="action-btn iconfont" onclick="openEditModal()">&#xe6bd; 编辑</button>
+                    <span class="delete-item iconfont">&#xe516; 删除</span>
+                </div>
+            </div>
+            <div class="job-meta">
+                <span class="meta-item iconfont">&#xe680; 数学</span>
+                <span class="meta-item iconfont">&#xe627; 创建教师：赵法涛</span>
+                <span class="meta-item iconfont">&#xe8b4; 2026-02-05 13:31</span>
+            </div>
+            <div class="job-main-row">
+                <div class="thumb-card" onclick="openLightbox(2, 1)">
+                    <img class="thumb-img" src="http://mmath.cn/demo/aiwork/t2.png" alt="thumb" onerror="this.src='https://via.placeholder.com/160x200?text=t2'">
+                    <span class="thumb-badge">2页</span>
+                </div>
+                <div class="class-row-duo"></div>
+            </div>
+        </div>
+
+        <!-- 任务3: 2月1日 -->
+        <div class="job-card">
+            <div class="job-header">
+                <span class="job-title">河北实验六年级英语2月1日同步作业</span>
+                <div class="job-actions">
+                    <button class="action-btn iconfont" onclick="void(0)">&#xe629; 重置标定卷</button>
+                    <button class="action-btn iconfont" onclick="openEditModal()">&#xe6bd; 编辑</button>
+                    <span class="delete-item iconfont">&#xe516; 删除</span>
+                </div>
+            </div>
+            <div class="job-meta">
+                <span class="meta-item iconfont">&#xe680; 数学</span>
+                <span class="meta-item iconfont">&#xe627; 创建教师：赵法涛</span>
+                <span class="meta-item iconfont">&#xe8b4; 2026-02-01 13:31</span>
+            </div>
+            <div class="job-main-row">
+                <div class="thumb-card" onclick="openLightbox(3, 1)">
+                    <img class="thumb-img" src="http://mmath.cn/demo/aiwork/t1.png" alt="thumb" onerror="this.src='https://via.placeholder.com/160x200?text=t1'">
+                    <span class="thumb-badge">8页</span>
+                </div>
+                <div class="class-row-duo">
+                    <a class="class-card" href="detials.html">
+                        <div class="class-name">八年级1班 <span class="class-total">班级共 40人</span></div>
+                        <div class="stats-grid">
+                            <span class="stat-item">已扫描 <span class="scanned-num">20人</span></span>
+                            <span class="stat-item">已批阅 <span class="marked-num">10人</span></span>
+                            <span class="stat-item"><span class="iconfont shalou">&#xe677;</span> 待处理 <span class="pending-num">2人</span></span>
+                        </div>
+                    </a>
+                    <a class="class-card"href="detials.html">
+                        <div class="class-name">八年级2班 <span class="class-total">班级共 42人</span></div>
+                        <div class="stats-grid">
+                            <span class="stat-item">已扫描 <span class="scanned-num">0人</span></span>
+                            <span class="stat-item">已批阅 <span class="marked-num">0人</span></span>
+                            <span class="stat-item"><span class="iconfont shalou">&#xe677;</span> 待处理 <span class="pending-num">2人</span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox (独立数据，每次打开重置) -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-prev" id="lightboxPrev" onclick="changePageLb(-1)">‹</div>
+        <div class="lightbox-next" id="lightboxNext" onclick="changePageLb(1)">›</div>
+        <div class="lightbox-content">
+            <img id="lightboxImg" class="lightbox-img" src="" alt="大图">
+            <div class="lightbox-footer">
+                <span id="lbPageIndicator" class="page-indicator-light">第 1 / 8 页</span>
+                <button class="close-lightbox" onclick="closeLightbox()">关闭</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 编辑弹窗 -->
+    <div id="editModal" class="modal">
+        <div class="modal-window">
+            <div class="modal-header">编辑作业<span class="modal-close" onclick="closeEditModal()">&times;</span></div>
+            <div class="modal-field"><label>任务日期</label><input type="date" value="2026-02-09"></div>
+            <div class="modal-field"><label>任务名称</label><input type="text" value="河北实验六年级英语2月9日同步作业"></div>
+            <div class="modal-field"><label>参加班级</label>
+                <label class="classitem"><input type="checkbox" disabled checked>四1班</label>
+                <label class="classitem"><input type="checkbox" disabled checked>四2班</label>
+                <label class="classitem"><input type="checkbox">四3班</label>
+                <label class="classitem"><input type="checkbox">四4班</label>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 20px;">
+                <button class="cancel-btn" onclick="closeEditModal()">取消编辑</button>
+                <button class="save-btn" onclick="saveEditModal()">保存修改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const lightboxPages = {
+        1: { total: 8, imgBase: 'http://mmath.cn/demo/aiwork/t1.png' },
+        2: { total: 2, imgBase: 'http://mmath.cn/demo/aiwork/t2.png' },
+        3: { total: 8, imgBase: 'http://mmath.cn/demo/aiwork/t1.png' }
+    };
+    let currentLbJob = 1, currentLbPage = 1, lbTotal = 8;
+
+    function openLightbox(jobId, startPage = 1) {
+        currentLbJob = jobId;
+        const data = lightboxPages[jobId];
+        lbTotal = data.total;
+        currentLbPage = 1; // 强制从第一页开始
+        updateLightboxSrc();
+        document.getElementById('lightbox').classList.add('active');
+    }
+
+    function updateLightboxSrc() {
+        const data = lightboxPages[currentLbJob];
+        document.getElementById('lightboxImg').src = data.imgBase + '?t=' + Date.now();
+        document.getElementById('lbPageIndicator').innerText = `第 ${currentLbPage} / ${lbTotal} 页`;
+        document.getElementById('lightboxPrev').style.display = currentLbPage <= 1 ? 'none' : 'flex';
+        document.getElementById('lightboxNext').style.display = currentLbPage >= lbTotal ? 'none' : 'flex';
+    }
+
+    function changePageLb(delta) {
+        let newPage = currentLbPage + delta;
+        if (newPage >= 1 && newPage <= lbTotal) {
+            currentLbPage = newPage;
+            updateLightboxSrc();
+        }
+    }
+
+    function closeLightbox() { document.getElementById('lightbox').classList.remove('active'); }
+    function openEditModal() { document.getElementById('editModal').classList.add('active'); }
+    function closeEditModal() { document.getElementById('editModal').classList.remove('active'); }
+    function saveEditModal() { alert('修改保存成功！'); closeEditModal(); }
+
+    // 更新事件监听以匹配新的类名
+    document.getElementById('editModal').addEventListener('click', e => { if (e.target === e.currentTarget) closeEditModal(); });
+    document.getElementById('lightbox').addEventListener('click', e => { if (e.target === e.currentTarget) closeLightbox(); });
+    document.querySelector('.modal-window')?.addEventListener('click', e => e.stopPropagation());
+    // 新建作业按钮点击提示
+    document.querySelector('.new-job-btn').addEventListener('click', () => {
+        alert('这是一个测试');
+    });
+</script>
+</body>
+</html>

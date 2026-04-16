@@ -1,0 +1,156 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "521431",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
+    },
+    {
+      "icon_id": "1766279",
+      "name": "符号-文档",
+      "font_class": "wendang",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "2741626",
+      "name": "箭头",
+      "font_class": "1",
+      "unicode": "e507",
+      "unicode_decimal": 58631
+    },
+    {
+      "icon_id": "3499487",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "3981943",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "5240001",
+      "name": "箭头",
+      "font_class": "xialia-jiantou-copy",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "6756281",
+      "name": "加号",
+      "font_class": "jiahao",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "7789613",
+      "name": "缩放大",
+      "font_class": "suofangda",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "7874506",
+      "name": "复制",
+      "font_class": "fuzhi",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "8802844",
+      "name": "学情概况",
+      "font_class": "studySurvey-copy-copy-copy",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "9430532",
+      "name": "关  闭",
+      "font_class": "guanbi",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "9826664",
+      "name": "警告",
+      "font_class": "jinggao",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "11121379",
+      "name": "解锁",
+      "font_class": "jiesuo",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "11372686",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e8b4",
+      "unicode_decimal": 59572
+    },
+    {
+      "icon_id": "13000874",
+      "name": "沙漏",
+      "font_class": "shalou",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "14803668",
+      "name": "搜索-互动",
+      "font_class": "sousuo",
+      "unicode": "e517",
+      "unicode_decimal": 58647
+    },
+    {
+      "icon_id": "18272208",
+      "name": "关注",
+      "font_class": "guanzhu",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "18829247",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e503",
+      "unicode_decimal": 58627
+    },
+    {
+      "icon_id": "26238794",
+      "name": "数学",
+      "font_class": "shuxue",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "26847638",
+      "name": "扫描",
+      "font_class": "saomiao",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "27604722",
+      "name": "删除",
+      "font_class": "shanchu2",
+      "unicode": "e516",
+      "unicode_decimal": 58646
+    }
+  ]
+}
